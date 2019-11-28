@@ -1,0 +1,55 @@
+<div id="container">
+        <div class="left">
+          <form #movie="ngForm">
+            <h1>REGISTER</h1>
+          <!-- <h3>Poster</h3>
+          <input 
+          style="display: none;"
+          type="file" 
+          (change)="onFileSelected($event.target.files)"
+          #fileInput>
+          <button (click)="fileInput.click()">Pick File</button> -->
+          
+          <h3>Name</h3>
+          <input type="text"
+           placeholder="Name"
+           required #name="ngModel"
+           autocomplete="off"
+           [class.invalid]="name.invalid && name.touched"
+           [(ngModel)]= "uName" 
+           name="uName">
+           
+          <br>
+          <h3>Username</h3>
+          <input type="text" 
+            placeholder="Username" 
+            required #username="ngModel" 
+            [class.invalid]="username.invalid && username.touched" 
+            [(ngModel)]= "userName" 
+            autocomplete="off"
+            name="userName">
+            <br>
+            <h3>Password</h3>
+            <input type="password" 
+              placeholder="Password" 
+              required #password="ngModel" 
+              [class.invalid]="password.invalid && password.touched" 
+              [(ngModel)]= "uPassword"
+              autocomplete="off" 
+              name="uPassword">
+              <br>
+              <h3>Re-type Password</h3>
+          <input type="password" 
+            placeholder="Re-type Password" 
+            required #repassword="ngModel" 
+            [class.invalid]="repassword.invalid && repassword.touched" 
+            [(ngModel)]= "rePassword" 
+            autocomplete="off"
+            name="rePassword">
+            <br>
+          <br>
+          <br>
+          <button id="btn" (click)="addUser()" name="submit">SUBMIT</button>
+        </form>
+      </div>
+      </div>

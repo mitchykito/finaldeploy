@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    background-color: yellowgreen;
+    padding-top: 10px;
+}
+.movies{
+    margin: auto;
+    margin: 15px 15px 15px 130px;
+    display: inline-block;
+    height: auto;
+    width: 80%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+.movies button{
+    margin-top: 50px;
+}
+.movies:hover{
+    opacity: .9;
+}
+.movies button:hover{
+    opacity: .7;
+}
+button[name=update]{
+    margin-right: 5px;    
+}
+

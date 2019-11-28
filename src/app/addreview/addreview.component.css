@@ -1,0 +1,45 @@
+.form-group{
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    text-align: left;
+    text-justify: auto;
+    width: 48.9%;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+textarea[name=com]{
+    width: 50%;
+}
+.container{
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-justify: auto;
+    width: 50%;
+}
+.container .ppp{
+    text-align: justify;
+}
+.container h1{
+    font-size: 60px;
+}
+button[name=com]{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+}
+button[name=com]:hover{
+    background-color: #4CAF50;
+}
+.coms p{
+    font-size: 15px;
+}
+.form-group h3{
+    font-size: 20px;
+}
+.form-group h4{
+    font-size: 30px;
+}

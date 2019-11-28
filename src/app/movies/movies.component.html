@@ -1,0 +1,14 @@
+<div class="container">
+  <div *ngFor="let movie of movies" class="movies">
+      <div (click)="addReview(movie._id)">
+        <h1>{{ movie?.title }}</h1>
+        <p><b>Director: </b>{{ movie.director }}</p>
+        <p><b>Genre: </b>{{ movie.genre }}</p>
+        <p><b>About: </b>{{ movie.about }}</p>
+      </div>
+      <div>
+        <button (click)="update(movie._id)"  class="btn" name="update">Update</button>
+        <button (click)="deleteMovie(movie._id)"  class="btn" name="delete">Delete</button>
+      </div>
+  </div>
+</div>

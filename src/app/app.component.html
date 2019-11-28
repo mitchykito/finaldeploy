@@ -1,0 +1,88 @@
+<div style="background-color: yellowgreen;  width: 100%; height: 800px;">
+  <ul>
+    <span><a routerLink="/movies" routerLinkActive="linkActive"><img src="assets/logo.png" alt=""></a></span>
+    <li><a routerLink="/movies" routerLinkActive="linkActive">MOVIES</a></li>
+    <!-- <li><a routerLink="/reviews" routerLinkActive="linkActive">REVIEWS</a></li> -->
+    <li style="float: right;"><a routerLink="/login" routerLinkActive="linkActive">LOGIN</a></li>
+    <li style="float: right;"><a routerLink="/register" routerLinkActive="linkActive">REGISTER</a></li>
+    <li style="float: right;"><a routerLink="/add_movie" routerLinkActive="linkActive">ADD MOVIE</a></li>
+</ul>
+
+  <router-outlet></router-outlet>
+</div>
+<!-- <div id="container">
+    <div class="left">0
+      <form #movie="ngForm">
+        <h1>Movie Form</h1>
+      <h3>Title</h3>
+      <input type="text"
+       placeholder="title"
+       required #movietitle="ngModel"
+       [class.invalid]="movietitle.invalid && movietitle.touched"
+       [(ngModel)]= "movieTitle" 
+       name="movieTitle">
+       
+      <br>
+      <h3>Director</h3>
+      <input type="text" 
+        placeholder="director" 
+        required #moviedirector="ngModel" 
+        [class.invalid]="moviedirector.invalid && moviedirector.touched" 
+        [(ngModel)]= "movieDirector" 
+        name="movieDirector">
+        <br>
+        <h3>Genre</h3>
+     
+      <select 
+      required #moviegenre="ngModel"
+      [(ngModel)]="movieGenre" 
+      name="movieGenre">
+        <option value="" disabled>--Select--</option>
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Adventure">Adventure</option>
+    </select>
+       
+      <br>
+      <h3>About</h3>
+     
+      <input type="text"
+       placeholder="about"
+       required #movieabout="ngModel"
+       [class.invalid]="movieabout.invalid && movieabout.touched"
+       [(ngModel)]= "movieAbout" 
+       name="movieAbout">
+       
+      <br>
+        <br>
+      <button id="btn" (click)="addMovie()" *ngIf="movie.valid" name="submit">Submit</button>
+    </form>
+  </div>
+  
+  <div class="right">
+  
+  <table>
+    <tr style="background: rgba(23, 52, 216, 0.863);">
+      <th>Title</th>
+      <th>Director</th>
+      <th>Genre</th>
+      <th>About</th>
+      <th style="text-align: center;">Action</th>
+    </tr>
+      <tr *ngFor="let movie of movies">
+          <td style="width: 100px;">
+            {{ movie.title }}</td>
+          <td>{{ movie.director }}</td>
+          <td>{{ movie.genre }}</td>
+          <td>{{ movie.about }}</td>
+          <td>
+              <button (click)="updateMovie(movie._id)" name="update">Update</button>
+              <button (click)="deleteMovie(movie._id)" name="delete">Delete</button>
+          </td>
+        </tr>
+  </table>
+  </div>
+  </div> -->

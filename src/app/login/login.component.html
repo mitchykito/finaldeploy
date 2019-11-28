@@ -1,0 +1,28 @@
+<div id="container">
+        <div class="left">
+          <form #movie="ngForm">
+          <h1>LOGIN</h1>
+          <h3>Username</h3>
+          <input type="text"
+           placeholder="Username"
+           required #lusername="ngModel"
+           [class.invalid]="lusername.invalid && lusername.touched"
+           [(ngModel)]= "loginUsername" 
+           name="loginUsername">
+           
+        <br>
+        <h3>Password</h3>
+          <input type="password"
+           placeholder="Password"
+           required #lpassword="ngModel"
+           [class.invalid]="lpassword.invalid && lpassword.touched"
+           [(ngModel)]= "loginPassword" 
+           name="loginPassword">
+        <br>
+        <br>
+        <div>
+        <button id="btn" (click)="login()" name="login">LOGIN</button>
+    </div>
+    </form>
+    </div>
+</div>

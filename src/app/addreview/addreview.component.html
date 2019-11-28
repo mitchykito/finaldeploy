@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>{{ movies?.title }}</h1>
+    <p class="ppp"><b>Director: </b>{{ movies?.director }}</p>
+    <p class="ppp"><b>Genre: </b>{{ movies?.genre }}</p>
+    <p class="ppp"><b>About: </b>{{ movies?.about }}</p>
+</div>
+
+<div class="form-group">
+    <h2>LEAVE A COMMENT</h2>
+    <textarea [(ngModel)]="comment" rows="5" name="com"></textarea>
+    <br>
+    <button id="btn" (click)="btn_post()"  name="com">ADD COMMENT</button>
+    <br>
+    <br>
+    <h3>Comments</h3>
+
+    <div *ngFor="let comments of postComment" class="coms">
+        <p>{{comments}}</p>
+    </div>
+</div> 
